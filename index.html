@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C R U D</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Pacifico&family=Poppins&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/index.Css">
+</head>
+<body>
+    
+    <header id="section-one" class=" container overflow-hidden row mx-auto">
+        <div class="col-lg-12 py-2 ">
+            <div class="system text-center  ">
+                <div class="system-intro d-flex flex-column align-items-center">
+                    <h1 class="head-title orange mb-2"> C R U D</h1>
+                    <h3 class="sub-title orange">Employees Data System</h3>
+                </div>
+
+                <div class="insData text-start text-start overflow-hidden">
+                    <div class="inputs d-flex justify-content-between">
+                        <div class=" col-lg-6 col-md-6 leftInp pe-1">
+                            <label for="first-name">First name</label>
+                            <input required id="first-name" class="form-control mb-2" placeholder="First name" type="text">
+                            <label for="department">Department</label>
+                            <input required id="department" class="form-control mb-2" placeholder="Department" type="text">
+                            <label for="email">E-mail</label>
+                            <input required id="email" class="form-control mb-2" placeholder="E-mail" type="email">
+                        </div>
+                        <div class=" col-lg-6 col-md-6 rightInp ps-1">
+                            <label for="second-name">Second name</label>
+                            <input required id="second-name" class="form-control mb-2" placeholder="Second name" type="text">
+                            <label for="position">Position</label>
+                            <input required id="position" class="form-control mb-2" placeholder="Position" type="text">
+                            <label for="Sallery">Sallery</label>
+                            <input required id="sallery" class="form-control ghy mb-2" placeholder="Sallery" type="number">
+                        </div>
+                    </div>
+                    <div class="textarea col-lg-12 col-md-12">
+                    <label for="textarea" class="text-start">Adress</label>
+                    <textarea type="text" id="textarea" class="form-control ghy" placeholder="Address"></textarea>
+                    </div>
+                    <div class="ins-button text-center d-flex justify-content-evenly mt-3">
+                    <button onclick="addNewEmployee()" class="btn btn-success px-5 me-2" id="main-button"><i class="fa-solid fa-user-plus me-1"></i>Add new employee</button>
+                    <button onclick="clearInputs()" class="btn btn-danger px-5"><i class="fa-solid fa-eraser me-1"></i> Delete current data</button>
+
+                    </div>
+                </div>
+            </div>
+                <div class="employess overflow-hidden ">
+                    <table class="table table-striped border my-3 overflow-hidden">
+                        <div class="search inputs">
+                        <input onkeyup="searchByName(this.value)" id="search" class="form-control mt-4 py-0" required placeholder="Search by Name.." type="text">
+                        </div>
+                        <thead class="text-white text-center">
+                            <tr>
+                                <th>ID</th>
+                                <th>First Name</th>
+                                <th>Second Name</th>
+                                <th>Department</th>
+                                <th>Position</th>
+                                <th>Sallary</th>
+                                <th>E-mail</th>
+                                <th>Address</th>
+                                <th class="text-center">Action</th>
+                                
+                            </tr>
+                        </thead> 
+    
+                        <tbody id="repeted" class="text-center">
+                            <!-- <tr>
+                                <td>1</td>
+                                <td>ahmed</td>
+                                <td>muhammed</td>
+                                <td>marketing</td>
+                                <td>seo</td>
+                                <td>ahmed@gmail</td>
+                                <td>new cairo</td>
+                                <td>13000</td>
+                                <td><i class="fa-solid fa-pen-nib"></i></td>
+                                <td><i class="fa-solid  fa-trash" onclick=""></i></td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

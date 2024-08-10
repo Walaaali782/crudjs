@@ -1,0 +1,49 @@
+
+body {background-color: rgb(41, 40, 40);}
+.orange {color: #E91E63;;}
+.head-title {animation: Rotate 1s linear  500ms;}
+.sub-title {border: 1px solid #E91E63;; border-radius: 10px; padding: 8px 80px; animation: fadeDown 1s linear  500ms;}
+label {color: white; margin-left: 5px; color:#76ABAE ;}
+.inputs input {background-color: #E5DDC5;}
+.ghy {background-color: #E5DDC5 ;}
+.textarea {animation: fadeUp 1s linear  500ms; }
+.ins-button{animation: Rotate 1s linear  500ms;}
+.table {background-color:#686D76; animation: fadeUp 1s linear  500ms; }
+.fa-user-pen {color: #40A2E3; font-size: 18px; transition: 0.5s all;}
+.fa-user-pen:hover {color: green; transform: rotatey(360deg);}
+.fa-user-xmark {color: #d32424; transition: 0.5s all; font-size: 18px;}
+.fa-user-xmark:hover {color: #E91E63;; transform: rotatey(360deg);}
+.rightInp {animation: crossRight 1s linear  500ms ;}
+.leftInp {animation: crossLeft 1s linear  500ms ;}
+.fa-solid {cursor: pointer;}
+h1 , h3 {font-family: "Pacifico", 'cursive';}
+
+
+@keyframes crossLeft{
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(0%);}
+}
+@keyframes crossRight{
+    0% {transform: translateX(100%);}
+    100% {transform: translateX(0%);}
+}
+@keyframes Rotate {
+    0% {transform: rotatey(45deg);}
+    30% {transform: rotatey(90deg);}
+    50% {transform: rotatey(180deg);}
+    70% {transform: rotatey(270deg);}
+    100% {transform: rotatey(360deg);}
+
+
+}
+@keyframes fadeDown {
+    0% {transform: translateY(100%);}
+    100% {transform: translateY(0%);}
+
+}
+@keyframes fadeUp {
+    0% {transform: translateY(-100%);}
+    100% {transform: translateY(0%);}
+
+}
+
